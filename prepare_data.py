@@ -78,11 +78,11 @@ if __name__ == '__main__':
             help='Time series window size.')
     parser.add_argument('--logging', default='INFO', choices=['DEBUG','INFO','WARNING','ERROR','CRITICAL'],
             help='Enable excessive variables screen outputs.')
-    parser.add_argument('--files_path', type=str, default='/work/datasets/ServerMachineDataset/train',
+    parser.add_argument('--files_path', type=str, default='C:/Users/alaeb/mtad-gat-try-out/ServerMachineDataset/train',
             help='Metrics files, train or test.')
     parser.add_argument('--label_path', type=str, default=None,
             help='Labels location.')
-    parser.add_argument('--tfrecords_file', type=str, default='gs://anomaly_detection/mtad_tf/data/train/{}.tfrecords',
+    parser.add_argument('--tfrecords_file', type=str, default='C:/Users/alaeb/mtad-gat-try-out/tfrecords/train/{}.tfrecords',
             help='tfrecords output file. It will be used as a prefix if split.')
 
     FLAGS, unparsed = parser.parse_known_args()
