@@ -82,8 +82,8 @@ if __name__ == '__main__':
             help='Metrics files, train or test.')
     parser.add_argument('--label_path', type=str, default=None,
             help='Labels location.')
-    parser.add_argument('--tfrecords_file', type=str, default='/home/alae.bouchiba/MTAD-GAT-Version2/mtad-gat-try-out/train/{}.tfrecords',
-            help='tfrecords output file. It will be used as a prefix if split.')
+    #parser.add_argument('--tfrecords_file', type=str, default='/home/alae.bouchiba/MTAD-GAT-Version2/mtad-gat-try-out/train/{}.tfrecords',
+            #help='tfrecords output file. It will be used as a prefix if split.')
 
     FLAGS, unparsed = parser.parse_known_args()
 
