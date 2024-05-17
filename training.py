@@ -371,7 +371,7 @@ if __name__ == '__main__':
     FLAGS, unparsed = parser.parse_known_args()
 
     if FLAGS.threshold is None and (FLAGS.action== "EVALUATE" or FLAGS.action == "PREDICT" and FLAGS.prediction_task != "RMS_loss" and FLAGS.prediction_task != "inference_score"):
-      tf.logging.error("EVAL and PREDICT need threshold value")
+      tf.compat.v1.logging.error("EVAL and PREDICT need threshold value")
       sys.exit()
 
     main()
