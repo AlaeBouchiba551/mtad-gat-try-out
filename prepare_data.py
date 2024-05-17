@@ -78,7 +78,7 @@ if __name__ == '__main__':
             help='Time series window size.')
     parser.add_argument('--logging', default='INFO', choices=['DEBUG','INFO','WARNING','ERROR','CRITICAL'],
             help='Enable excessive variables screen outputs.')
-    parser.add_argument('--files_path', type=str, default='/home/alae.bouchiba/MTAD-GAT-Version2/mtad-gat-try-out/',
+    parser.add_argument('--files_path', type=str, default='/home/alae.bouchiba/MTAD-GAT-Version2/mtad-gat-try-out/ServerMachineDataset/train',
             help='Metrics files, train or test.')
     parser.add_argument('--label_path', type=str, default=None,
             help='Labels location.')
