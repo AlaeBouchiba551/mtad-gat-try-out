@@ -43,7 +43,7 @@ def create_records(files_path, label_path, window_size, tfrecords_file):
 
             logger.debug ("data file {}: data shape {}".format(machine_file, data_array.shape))
             if label_path:
-                label_array = np.loadtxt(os.path.join(label_path,machine_file), delimiter=',', dtype=np.int)
+                label_array = np.loadtxt(os.path.join(label_path,machine_file), delimiter=',', dtype=int)
                 logger.debug ("label file {}: label shape {}".format(machine_file, label_array.shape))
 
             record_count = 0
